@@ -19,6 +19,6 @@
 set -e
 set -x
 
-sudo apt-get install -y python-pip
+sudo apt-get install -y python3-pip
 sudo pip install argcomplete
 sudo pip install couchdb

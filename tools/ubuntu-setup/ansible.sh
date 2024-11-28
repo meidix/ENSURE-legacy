@@ -19,12 +19,12 @@
 set -e
 set -x
 
-sudo pip install --upgrade setuptools pip
+#sudo pip install --upgrade setuptools pip
 sudo apt-get install -y software-properties-common
 sudo apt-add-repository -y ppa:ansible/ansible
 sudo apt-get update
-sudo apt-get install -y python-dev libffi-dev libssl-dev
-sudo pip install markupsafe
+sudo apt-get install -y python-dev-is-python3 libffi-dev libssl-dev
+# sudo pip install markupsafe
 sudo pip install ansible==2.5.2
 sudo pip install jinja2==2.9.6
 sudo pip install docker==2.2.1    --ignore-installed  --force-reinstall

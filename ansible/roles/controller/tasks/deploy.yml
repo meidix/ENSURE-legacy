@@ -301,7 +301,7 @@
     image:
       "{{docker_registry~docker.image.prefix}}/controller:{{ 'cov' if (coverage_enabled) else docker.image.tag }}"
     state: started
-    recreate: true
+    recreate: false
     restart_policy: "{{ docker.restart.policy }}"
     hostname: "{{ controller_name }}"
     env: "{{ env }}"

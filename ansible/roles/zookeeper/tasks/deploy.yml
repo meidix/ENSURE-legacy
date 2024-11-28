@@ -15,7 +15,7 @@
     name: zookeeper{{ groups['zookeepers'].index(inventory_hostname) }}
     image: zookeeper:{{ zookeeper.version }}
     state: started
-    recreate: true
+    recreate: false
     restart_policy: "{{ docker.restart.policy }}"
     env:
         TZ: "{{ docker.timezone }}"

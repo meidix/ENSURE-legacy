@@ -86,3 +86,9 @@ intellij-run-config.groovy
 
 # VSCode
 .vscode/
+
+venv/
+/venv/
+.env
+.python-version
+bin

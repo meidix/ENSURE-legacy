@@ -34,8 +34,8 @@ SCRIPTDIR="$( dirname "$SOURCE" )"
 echo "*** installing basics"
 /bin/bash "$SCRIPTDIR/misc.sh"
 
-echo "*** installing python dependences"
-/bin/bash "$SCRIPTDIR/pip.sh"
+# echo "*** installing python dependences"
+# /bin/bash "$SCRIPTDIR/pip.sh"
 
 echo "*** installing java"
 /bin/bash "$SCRIPTDIR/java8.sh" $JAVA_SOURCE
